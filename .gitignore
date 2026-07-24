@@ -1,0 +1,36 @@
+# Environnement virtuel
+.venv/
+venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Données (souvent volumineuses, ne doivent pas être versionnées dans Git)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modèles entraînés (fichiers .pkl potentiellement lourds)
+models/*.pkl
+
+# Résultats générés par le batch
+outputs/*
+!outputs/.gitkeep
+
+# Variables d'environnement / secrets
+.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
